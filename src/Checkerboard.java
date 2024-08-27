@@ -9,8 +9,15 @@
 public class Checkerboard {
 
 	public static void main(String[] args) {
+		if(args.length < 1) { //Check the number of arguments
+			System.out.println("Too few arguments");
+			System.exit(0);
+		}
 		
-
+		int dim = Integer.parseInt(args[0]);
+		for(int j=0; j<dim; j++) {
+			System.out.print("* ");
+		}
 	}
 
 }
